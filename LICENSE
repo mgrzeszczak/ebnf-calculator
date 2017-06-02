@@ -1,28 +1,3 @@
-# ebnf-calculator
-Calculator based on an unambiguous context-free grammar and using ebnf top-down parser.
-
-# Grammar
-```
-expression -> expression add_op term | term
-term -> term mul_op factor | factor
-factor -> exponent ^ factor | exponent
-exponent -> # exponent | root
-root -> number | (expression)
-mul_op -> * | /
-add_op -> + | -
-```
-
-# Usage
-```
-./run.sh
->> 2+2*2
-6.0
->> 10+10*5^2-(2*3*#4)
-248.0
-```
-
-# License (MIT)
-```
 Copyright (c) 2017 Maciej Grzeszczak
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -42,4 +17,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-```
