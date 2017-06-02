@@ -1,4 +1,6 @@
 # ebnf-calculator
+[![Build Status](https://travis-ci.org/mgrzeszczak/ebnf-calculator.png)](https://travis-ci.org/mgrzeszczak/ebnf-calculator)
+
 Calculator based on an unambiguous context-free grammar and using ebnf top-down parser.
 
 # Grammar
